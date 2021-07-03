@@ -1,0 +1,15 @@
+
+#include<stdio.h>
+#include<math.h>
+
+int isSquareNumber(int n){
+ if(n>=1 && (sqrt(n)==(int)sqrt(n))){
+
+return 1;
+ }
+ 
+ else{
+     
+ } 
+  return 0;
+}

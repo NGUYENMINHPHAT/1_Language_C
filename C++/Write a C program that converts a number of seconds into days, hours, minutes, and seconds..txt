@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+	int sec,D,h,m,s;
+	scanf("%d",&sec);
+	
+	D=sec/86400;
+	h=(sec-(D*86400))/3600;
+	
+	m=(sec/60%60);
+	s=sec%60;
+  	if(sec>=86400)
+  		printf("%d days %02d:%02d:%02d",D,h,m,s);
+  	else {
+  		printf("%02d:%02d:%02d",h,m,s);
+  
+	}
+     return  0;
+   }

@@ -1,0 +1,9 @@
+#include<stdio.h>
+void in_nguoc(int n)
+{
+if(n!=0)
+{
+printf("%d ",n%10);
+in_nguoc(n/10);
+}
+}

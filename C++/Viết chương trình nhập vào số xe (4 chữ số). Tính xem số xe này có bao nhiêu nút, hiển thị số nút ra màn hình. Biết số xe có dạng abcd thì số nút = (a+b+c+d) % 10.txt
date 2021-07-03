@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<ctype.h>
+int main()
+{
+    char bien_so[5]="";
+    int Sum=0,check=0;
+    do
+    {
+        int i=0;
+        bien_so[i]=getchar();
+        i++;
+        while(i<4)
+        {
+            bien_so[i]=getchar();
+            i++;
+        }
+        for(int j=0; j<4; j++)
+        {
+            char moi_so[2]="";
+            moi_so[0]=bien_so[j];
+            if(atoi(moi_so))
+                check=1;
+            else
+            {
+                check=0;
+                printf("Bien so xe da nhap khong hop le.Xin moi nhap lai.\n");
+                break;
+            }
+        }
+    }
+    while(check==0);
+    for(int k=0; k<4; k++)
+    {
+        char mot_so[2]="";
+        mot_so[0]=bien_so[k];
+        Sum+=atoi(mot_so);
+    }
+    printf("%d",Sum%10);
+    return 0;
+}

@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<math.h>
+int  isPalindrome(int A[], int n){
+    int flag = 1;
+    for(int i = 0; i < n; i++)
+    {
+        if(A[i] != A[n - i - 1])
+        {
+            flag = 0;
+            break;
+        }
+    }
+    return flag;
+}

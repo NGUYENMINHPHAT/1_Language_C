@@ -1,0 +1,39 @@
+	#include<stdio.h>
+int main (){
+	float lt, th1, th2, th3, th4, tb;
+	scanf ("%f %f %f %f %f", &lt, &th1, &th2, &th3, &th4);
+	tb = (lt +th1 +th2 +th3 +th4)/5;
+	if (tb >= 9){
+	printf ("Diem so: %.1f\n", tb);
+	printf ("Diem chu: A");
+	}
+	else if (tb >8 && tb <9){
+	printf ("Diem so: %.1f\n", tb);
+	printf ("Diem chu: B+");
+	}
+	else if (tb >7 && tb <8){
+	printf ("Diem so: %.1f\n", tb);
+	printf ("Diem chu: B");
+	}
+	else if (tb >6 && tb <7){
+	printf ("Diem so: %.1f\n", tb);
+	printf ("Diem chu: C+");
+	}
+	else if (tb >5 && tb <6){
+	printf ("Diem so: %.1f\n", tb);
+	printf ("Diem chu: C");
+	}
+	else if (tb >4.5 && tb <5){
+	printf ("Diem so: %.1f\n", tb);
+	printf ("Diem chu: D+");
+	}
+	else if (tb >4 && tb < 4.5) {
+	printf ("Diem so: %.1f\n", tb);
+	printf ("Diem chu: D");
+	}
+	else if (tb <4){
+	printf ("Diem so: %.1f\n", tb);
+	printf ("Diem chu: F");
+	}
+	return 0 ;
+}

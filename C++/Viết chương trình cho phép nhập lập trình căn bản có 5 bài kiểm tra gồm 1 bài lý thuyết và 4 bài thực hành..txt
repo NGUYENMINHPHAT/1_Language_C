@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+    float LT,TH1,TH2,TH3,TH4,TB;
+    scanf("%f%f%f%f%f",&LT,&TH1,&TH2,&TH3,&TH4);
+    TB= (LT + TH1 + TH2 + TH3 + TH4)/5;
+    if(TB>=4)
+    printf("DAT");
+    else{
+        printf("KHONG DAT");
+    }
+}

@@ -1,0 +1,16 @@
+#include <stdio.h>
+int isPower2(int n){
+    int k;
+    unsigned int p = 1;
+    do{
+    }while(n <= 0);
+    for(k = 1; p < n; k++){
+        p *= 2;
+    }
+    if(p == n) {
+ return 1;
+    }
+    else{
+        }
+ return 0;
+}

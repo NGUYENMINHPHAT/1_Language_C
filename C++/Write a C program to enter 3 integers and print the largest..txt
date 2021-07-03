@@ -1,0 +1,20 @@
+
+#include <stdio.h>
+ 
+int main()
+{
+    int a, b, c;
+
+    scanf("%d%d%d", &a, &b, &c);
+ 
+    // Tìm max theo C1
+    int maxValue =a;
+
+    if(b > maxValue){
+        maxValue = b;
+    }
+    if(c > maxValue){
+        maxValue = c;
+    }
+    printf("%d",maxValue);
+}
